@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'pop';
+    src: url(../font/Poppins-Medium.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'pop';
+    display: flex;
+    gap: 140px;
+    padding: 20% 0 0 5%;
+}
+.cont1, .cont2, .cont3 {
+    display: flex;
+    font-size: 3.8em;
+    margin: 2% 0 0 0;
+}
+.container1 {
+    text-align: left;
+    width: 25%;
+    box-shadow: 0 5px orange;
+}
+.container2 {
+    text-align: left;
+    width: 25%;
+    box-shadow: 0 5px rgb(14, 190, 46);
+}
+.container3 {
+    text-align: left;
+    width: 25%;
+    box-shadow: 0 5px rgb(78, 15, 130);
+}
+p {
+    font-size: 25px;
+}
+
+@media  screen and (max-width:1000px) {
+    body {
+        gap: 200px;
+        padding-left: 30%;
+        flex-direction: column;
+    }
+    .container1, .container2, .container3 {
+        font-size: larger;
+        width: 60%;
+    }
+}
